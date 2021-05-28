@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/estilo.css">
-    
+
     <title>Calculadora IMC</title>
 
 </head>
@@ -15,16 +15,18 @@
 
 <body>
 
+    <!-- Inicio Container -->
     <div id=container>
         
         <h1>Calcule seu IMC</h1>
 
-        <form action="">
+        <form action=""> <!-- Inicio Form -->
 
             <div class="calculadora-peso">
 
                 <p>Digite o seu peso</p>
-                <input type="number" class="input-number">
+                <input id="peso" type="number" class="input-number">
+                <span>Kg</span>
                 <input type="range" class="slider">
 
             </div>
@@ -32,17 +34,23 @@
             <div class="calculadora-altura">
 
                 <p>Digite a sua altura</p>
-                <input type="number" class="input-number">
-                <input type="range" class="slider" >
+                <input id="altura" type="number" class="input-number">
+                <span>cm</span>
+                <input type="range" class="slider">
                 
             </div>
 
-            <input type="button" value="Calcular" class="button" placeholder="Calcular">
+            <input id="btnCalcular" type="button" value="Calcular" class="button" >
 
-        </form>
+        </form> <!-- Fim Form -->
+
+        <div id= "resultado"></div>
         
     </div>
-    
+    <!-- Fim Container -->
+
+    <script type="text/javascript" src="./js/script.js"></script>
+
 </body>
 
 </html>

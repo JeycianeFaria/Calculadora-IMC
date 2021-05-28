@@ -1,5 +1,7 @@
 body {
     background:#e6f9ff;
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -14,6 +16,7 @@ p{
     text-transform: uppercase;
 }
 
+
 #container {
     background: #3055c5;
     border: 1px solid #001a66;
@@ -22,6 +25,7 @@ p{
     height: 480px;
     margin: 50px;
     padding:15px;
+    width: 800px;
 }
 
 .calculadora-peso, .calculadora-altura {
